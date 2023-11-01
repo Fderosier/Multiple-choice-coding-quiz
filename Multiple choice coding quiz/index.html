@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code Quiz Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Code Quiz Game</h1>
+        <div id="start-screen">
+            <button id="start-button">Start Game</button>
+        </div>
+        <div id="question-screen" style="display: none;">
+            <p id="question-text"></p>
+            <div id="options">
+                <button class="option">Option 1</button>
+                <button class="option">Option 2</button>
+                <button class="option">Option 3</button>
+                <button class="option">Option 4</button>
+            </div>
+        </div>
+        <div id="end-screen" style="display: none;">
+            <h2>Game Over</h2>
+            <p>Your score: <span id="score">0</span></p>
+            <label for="initials">Enter your initials:</label>
+            <input type="text" id="initials">
+            <button id="save-button">Save Score</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
